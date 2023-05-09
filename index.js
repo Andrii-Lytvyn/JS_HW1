@@ -11,8 +11,25 @@ for (let i = 0; i < nameArray.length; i++) {
     // console.log('age: ' + agesArray[i]);
     // console.log();
     mixedArray.push(nameArray[i] + ' ' + agesArray[i] + ' years old');
-
-}
-for (var i = 0; i < mixedArray.length; i++) {
     console.log(mixedArray[i]);
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Задание 2
+// Используя пройденные на занятии методы массива получите из этого массива новый массив,
+//в котором элементы идут в обратной последовательности.
+
+console.log();
+console.log('new Array');
+console.log();
+let newArray = [''];
+for (let i = 0; i < mixedArray.length; i++) {
+    newArray.unshift(mixedArray[i]);
+
+}
+
+
+for (var i = 0; i < newArray.length; i++) {
+    console.log(newArray[i]);
+}
+
